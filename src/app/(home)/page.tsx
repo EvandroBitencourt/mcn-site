@@ -85,6 +85,70 @@ export default async function Home() {
         </div>
       </section>
 
+      <section className="bg-light p-3 p-md-5">
+        <div className="container">
+          <h4 className="text-center display-5 mb-md-5" data-aos="fade-down">
+            <span className="section-title">Notícias</span>
+          </h4>
+          <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="col">
+              <div className="card">
+                <img
+                  src="assets/images/estoque-blog.jpg"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    Melhores bibliotecas para React Native/Expo (2024)
+                  </h5>
+                  <p className="card-text">
+                    orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                  <button className="btn btn-outline-dark">Leia mais</button>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card">
+                <img
+                  src="assets/images/blog1.jpg"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    A MCN Software tem um programa exclusivo
+                  </h5>
+                  <p className="card-text">
+                    orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                  <button className="btn btn-outline-dark">Leia mais</button>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card">
+                <img
+                  src="assets/images/estoque-blog.jpg"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    Como minimizar perdas e desperdícios no estoque
+                  </h5>
+                  <p className="card-text">
+                    orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                  <button className="btn btn-outline-dark">Leia mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="p-md-5 p-3">
         <h2 className="section-title mb-5">FALE CONOSCO</h2>
         <div className="container text-center d-flex justify-content-evenly flex-column flex-md-row gap-3">

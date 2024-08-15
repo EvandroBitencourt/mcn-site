@@ -49,10 +49,11 @@ export function Header() {
                                     priority={true}
                                     width={245}
                                     height={100}
+                                    className="img-fluid"
                                 />
                             </Link>
                         </div>
-                        <div className="col-md-4 col-12 col-lg-4 mt-3 mt-md-0">
+                        <div className="col-md-4 col-12 col-lg-4 mt-3 mt-md-0 d-none d-md-block">
                             <Link href="/assets/download/TeamViewerQS10.exe" className="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="top"
                                 data-bs-custom-class="custom-tooltip"
                                 data-bs-title="This top tooltip is themed via CSS variables.">
@@ -62,13 +63,15 @@ export function Header() {
                                     alt="Logo do site"
                                     quality={100}
                                     priority={true}
-                                    width={243}
+                                    width={270}
                                     height={69}
+                                    className="img-fluid"
+
                                 />
                             </Link>
 
                         </div>
-                        <div className="col-6 col-md-4 col-lg-4 mt-3 mt-md-0">
+                        <div className="col-6 col-md-4 col-lg-4 mt-3 mt-md-0 d-none d-md-block">
                             <div>
                                 <Link href="/assets/download/AnyDesk.exe" className="navbar-brand">
                                     <Image
@@ -78,6 +81,8 @@ export function Header() {
                                         priority={true}
                                         width={217}
                                         height={67}
+                                        className="img-fluid"
+
                                     />
                                 </Link>
                             </div>

@@ -3,10 +3,32 @@ import { BlogProps } from "@/utils/blog.type"
 import Image from "next/image";
 import { getItemBySlug } from "@/utils/actions/get-data";
 
-const formatDate = (dateString) => {
-    const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-    return new Intl.DateTimeFormat('pt-BR', options).format(new Date(dateString));
+const formatDate = (dateString: string): string => {
+    try {
+        // Cria um objeto Date a partir da string
+        const date = new Date(dateString);
+
+        // Verifica se a data é inválida
+        if (isNaN(date.getTime())) {
+            throw new Error('Data inválida');
+        }
+
+        // Configurações para o formato brasileiro
+        const options: Intl.DateTimeFormatOptions = {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+        };
+
+        // Retorna a data formatada
+        return new Intl.DateTimeFormat('pt-BR', options).format(date);
+    } catch (error) {
+        console.error('Erro ao formatar data:', error);
+        return 'Data inválida'; // Retorna uma mensagem de erro ou uma string padrão
+    }
 };
+
+
 
 
 export default async function Details({ params: { slug } }: { params: { slug: string } }) {

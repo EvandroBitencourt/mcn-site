@@ -101,12 +101,10 @@ export default async function Home() {
 
       <section className="p-md-5 p-3">
         <h2 className="section-title mb-5">FALE CONOSCO</h2>
-        <div className="container text-center d-flex justify-content-evenly flex-column flex-md-row gap-3">
+        <div className="container text-center d-flex justify-content-center flex-column flex-md-row gap-3">
           <button type="button" className="btn btn-primary" data-aos="flip-left"><PhoneCall size={20} /> (65) 3054-4338</button>
-          <button type="button" className="btn btn-primary" data-aos="flip-left"><PhoneCall size={20} /> (65) 3624-1854</button>
           <button type="button" className="btn btn-primary" data-aos="flip-left"><PhoneCall size={20} /> (65) 3054-4339</button>
-          <button type="button" className="btn btn-primary" data-aos="flip-left"><PhoneCall size={20} /> (65) 3054-4341</button>
-          <button type="button" className="btn btn-primary" data-aos="flip-left"><PhoneCall size={20} /> (65) 3626-7202</button>
+
         </div>
       </section>
     </main>

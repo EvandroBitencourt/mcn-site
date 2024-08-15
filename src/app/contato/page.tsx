@@ -73,11 +73,6 @@ export default function Contatos() {
                             <ul className="list-group">
                                 <li className="list-group-item"><FaPhone /> <Link href="tel:6530544338" className="text-decoration-none text-dark">(65) 3054-4338</Link></li>
                                 <li className="list-group-item"><FaPhone /> <Link href="tel:6530544339" className="text-decoration-none text-dark">(65) 3054-4339</Link></li>
-                                <li className="list-group-item"><FaPhone /> <Link href="tel:6530544341" className="text-decoration-none text-dark">(65) 3054-4341</Link></li>
-                                <li className="list-group-item"><FaPhone /> <Link href="tel:6536241854" className="text-decoration-none text-dark">(65) 3624-1854</Link></li>
-                                <li className="list-group-item"><FaPhone /> <Link href="tel:6536267202" className="text-decoration-none text-dark">(65) 3626-7202</Link></li>
-                                <li className="list-group-item"><FaPhone /> <Link href="tel:65996249230" className="text-decoration-none text-dark">(65) 99624-9230</Link></li>
-                                <li className="list-group-item"><FaPhone /> <Link href="tel:65993264949" className="text-decoration-none text-dark">(65) 99326-4949</Link></li>
                             </ul>
 
 

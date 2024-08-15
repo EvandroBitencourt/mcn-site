@@ -153,7 +153,7 @@ export function Header() {
                                 </li>
 
                                 <li className="nav-item mx-lg-2 mx-xl-2">
-                                    <Link className="nav-link" href="/sobre">
+                                    <Link className="nav-link" href="/noticias">
                                         NOTÍCIAS
                                     </Link>
                                 </li>

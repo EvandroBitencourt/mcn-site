@@ -48,7 +48,7 @@ export default async function Details({ params: { slug } }: { params: { slug: st
                     quality={100}
                     width={1200}
                     height={800}
-                    className=""
+                    className="img-fluid"
                 />
             </div>
             <section>

@@ -1,5 +1,6 @@
-"use client"
-import { useEffect } from "react";
+
+import { ProductProps } from "@/utils/product.type";
+import { AppProps } from "@/utils/aplicativo.type";
 import Link from 'next/link'
 import Image from 'next/image'
 import {
@@ -7,13 +8,20 @@ import {
     Mail,
 
 } from "lucide-react";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
-export function Header() {
-    useEffect(() => {
-        AOS.init({ duration: 1500 });
-    }, []);
+import { Product } from "../product";
+import { Aplicativo } from "../aplicativo";
+import { getDataApp, getDataProduct } from "@/utils/actions/get-data";
+
+export async function Header() {
+
+
+
+    const { objects }: ProductProps = await getDataProduct();
+    const data: AppProps = await getDataApp();
+
+
+
     return (
         <>
             <header>
@@ -121,10 +129,7 @@ export function Header() {
                                         PRODUTOS
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Materiais para construção</a></li>
-                                        <li><a className="dropdown-item" href="#">Auto peças</a></li>
-                                        <li><a className="dropdown-item" href="#">Distribuidoras</a></li>
-                                        <li><a className="dropdown-item" href="#">Lojas de Decorações e Presentes</a></li>
+                                        <Product objects={objects} />
                                     </ul>
 
                                 </li>
@@ -139,13 +144,7 @@ export function Header() {
                                         APLICATIVOS
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Mcn Estoque</a></li>
-                                        <li><a className="dropdown-item" href="#">Conferencia Carga entrega</a></li>
-                                        <li><a className="dropdown-item" href="#">Conferencia mercadoria</a></li>
-                                        <li><a className="dropdown-item" href="#">Fotos produtos e Cod Barras</a></li>
-                                        <li><a className="dropdown-item" href="#">Vendas Externa Mobile</a></li>
-                                        <li><a className="dropdown-item" href="#">BI/Dashboard</a></li>
-                                        <li><a className="dropdown-item" href="#">Mcn Ecommerce</a></li>
+                                        <Aplicativo data={data} />
                                     </ul>
 
                                 </li>

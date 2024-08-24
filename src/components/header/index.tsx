@@ -62,7 +62,7 @@ export async function Header() {
                             </Link>
                         </div>
                         <div className="col-md-4 col-12 col-lg-4 mt-3 mt-md-0 d-none d-md-block">
-                            <Link href="/assets/download/TeamViewerQS10.exe" className="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="top"
+                            <a href="/download/TeamViewerQS10.exe" download className="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="top"
                                 data-bs-custom-class="custom-tooltip"
                                 data-bs-title="This top tooltip is themed via CSS variables.">
 
@@ -76,12 +76,12 @@ export async function Header() {
                                     className="img-fluid"
 
                                 />
-                            </Link>
+                            </a>
 
                         </div>
                         <div className="col-6 col-md-4 col-lg-4 mt-3 mt-md-0 d-none d-md-block">
                             <div>
-                                <Link href="/assets/download/AnyDesk.exe" className="navbar-brand">
+                                <a href="/download/AnyDesk.exe" download className="navbar-brand">
                                     <Image
                                         src="/assets/images/mcnsistemas-anydesk-download.png"
                                         alt="Logo do site"
@@ -92,7 +92,7 @@ export async function Header() {
                                         className="img-fluid"
 
                                     />
-                                </Link>
+                                </a>
                             </div>
                         </div>
 

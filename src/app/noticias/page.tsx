@@ -38,7 +38,7 @@ export default async function Noticias() {
                                     <p className="card-text">
                                         {truncateText(news.metadata.posts.descricao, 150)}
                                     </p>
-                                    <Link href={`/post/${news.slug}`}>
+                                    <Link href={`/noticias/${news.slug}`}>
                                         <button className="btn btn-outline-dark">Leia mais</button>
                                     </Link>
                                 </div>

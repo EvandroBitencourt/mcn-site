@@ -1,0 +1,9 @@
+{
+    "routes": [
+      {
+        "src": "/downloads/(.*)",
+        "dest": "/public/downloads/$1"
+      }
+    ]
+  }
+  

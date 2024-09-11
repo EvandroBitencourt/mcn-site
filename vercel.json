@@ -1,9 +1,9 @@
 {
-    "routes": [
-      {
-        "src": "/downloads/(.*)",
-        "dest": "/public/downloads/$1"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/downloads/:file*",
+      "destination": "/public/downloads/:file*"
+    }
+  ]
+}
   

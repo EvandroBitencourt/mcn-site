@@ -1,9 +1,10 @@
 {
   "rewrites": [
     {
-      "source": "/downloads/:file*",
-      "destination": "/public/downloads/:file*"
+      "source": "/download/(.*)",
+      "destination": "/download/$1"
     }
   ]
 }
+
   

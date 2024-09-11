@@ -81,7 +81,7 @@ export async function Header() {
                         </div>
                         <div className="col-6 col-md-4 col-lg-4 mt-3 mt-md-0 d-none d-md-block">
                             <div>
-                                <a href="/download/AnyDesk.exe" download className="navbar-brand">
+                                <a href="https://mcn-tutoriais.s3.sa-east-1.amazonaws.com/AnyDesk.exe" download className="navbar-brand">
                                     <Image
                                         src="/assets/images/mcnsistemas-anydesk-download.png"
                                         alt="Logo do site"
